@@ -2,60 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechBlog Landing Page</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TechBlog - A Computer Science Blog</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <!-- Navigation Bar -->
+    <header>
         <nav class="navbar">
             <div class="logo">
                 <img src="images/logo.jpg" alt="TechBlog Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#topics">Topics</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="cta-button">Visit the App</a>
+            <button class="quote-button">Join Us</button>
         </nav>
-        <div class="intro">
-            <h1>Welcome to TechBlog</h1>
-            <p>Your go-to platform for the latest tech insights and trends.</p>
-        </div>
     </header>
 
-    <section id="features" class="features">
-        <h2>Our Key Features</h2>
-        <div class="feature-item">
-            <img src="images/tech-workspace.jpg" alt="Feature 1">
-            <h3>Personalized Content</h3>
-            <p>Stay up-to-date with content tailored to your interests.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to TechBlog</h1>
+            <p>Your trusted source for the latest insights in computer science, technology trends, and software engineering.</p>
+            <p>Dive deep into tutorials, case studies, and opinion pieces by leading experts in the field.</p>
+            <div class="hero-buttons">
+                <a href="#" class="primary-btn">Explore Articles</a>
+                <a href="#" class="secondary-btn">Watch Our Podcast</a>
+            </div>
         </div>
-        <div class="feature-item">
-            <img src="images/tech-workspace.jpg" alt="Feature 2">
-            <h3>Expert Insights</h3>
-            <p>Gain access to articles written by industry experts.</p>
-        </div>
-        <div class="feature-item">
-            <img src="images/tech-workspace.jpg" alt="Feature 3">
-            <h3>Community Driven</h3>
-            <p>Join a community of like-minded tech enthusiasts.</p>
+        <img src="images/tech-hero.png" alt="Tech Blog Hero Image" class="hero-image">
+    </section>
+
+    <!-- Article Highlights Section -->
+    <section id="articles" class="articles-section">
+        <h2>Featured Articles</h2>
+        <div class="article-list">
+            <article class="article-item">
+                <img src="images/article1.jpg" alt="Machine Learning">
+                <h3>Machine Learning: From Basics to Advanced Techniques</h3>
+                <p>Uncover the fundamentals of machine learning and explore real-world applications that are transforming industries.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="article-item">
+                <img src="images/article2.jpg" alt="Software Development">
+                <h3>Best Practices in Modern Software Development</h3>
+                <p>Learn the strategies and tools top developers use to build robust, scalable applications.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="article-item">
+                <img src="images/article3.jpg" alt="Cybersecurity">
+                <h3>Cybersecurity: Staying Safe in the Digital Age</h3>
+                <p>Discover the latest trends in cybersecurity and how to protect your organization from evolving threats.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Inspired by our passion for technology, TechBlog is crafted to bring you the latest and most relevant tech news and insights. Explore our content and join our growing community of tech enthusiasts.</p>
-        <div class="team">
-            <img src="images/tech-workspace.jpg" alt="Team Image">
-            <p>Meet the creators: Yahya Oubedda and Mohamed Essrhir. Connect with us on <a href="#">LinkedIn</a>, <a href="#">GitHub</a>, and <a href="#">Twitter</a>.</p>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
-        <p>© 2024 TechBlog. All rights reserved.</p>
+        <p>© 2024 TechBlog. All rights reserved. Connect with us on <a href="#">LinkedIn</a>, <a href="#">Twitter</a>, and <a href="#">GitHub</a>.</p>
     </footer>
 
     <script src="js/main.js"></script>
