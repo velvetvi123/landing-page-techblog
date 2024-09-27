@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body, html {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
+  }
+  
+  body,
+  html {
+    font-family: "Roboto", sans-serif;
+    color: #333;
     height: 100%;
     overflow-x: hidden;
-}
-
-.header {
-    background-image: url('../images/photo-couverture.jpg');
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    background-image: url("../images/tech-workspace.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -23,9 +25,10 @@ body, html {
     align-items: center;
     text-align: center;
     position: relative;
-}
-
-.navbar {
+    color: #fff;
+  }
+  
+  .navbar {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -33,84 +36,120 @@ body, html {
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 120px;
-}
-
-.nav-links {
+  }
+  
+  .nav-links {
     display: flex;
     gap: 20px;
-}
-
-.nav-links a {
+  }
+  
+  .nav-links a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
-}
-
-.nav-links a:hover {
+  }
+  
+  .nav-links a:hover {
     color: #ffcc00;
-}
-
-.cta-button {
+  }
+  
+  .cta-button {
     background-color: #ffcc00;
     color: #333;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
-}
-
-.cta-button:hover {
+  }
+  
+  .cta-button:hover {
     background-color: #ff9900;
-}
-
-.intro h1 {
-    font-size: 3rem;
+  }
+  
+  .intro h1 {
+    font-size: 3.5rem;
     margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 1.2rem;
-}
-
-.features, .about {
+  }
+  
+  .intro p {
+    font-size: 1.5rem;
+  }
+  
+  .features {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .features h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  
+  .feature-item {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color: #f9f9f9;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .feature-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .feature-item h3 {
+    margin: 15px 0;
+    color: #111;
+  }
+  
+  .feature-item p {
+    color: #555;
+  }
+  
+  .about {
     padding: 60px 30px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-.features h2, .about h2 {
+    color: #fff;
+  }
+  
+  .about h2 {
     margin-bottom: 40px;
     font-size: 2.5rem;
-}
-
-.feature-item {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .about p,
+  .about a {
+    color: #ddd;
+  }
+  
+  .team img {
+    width: 80%;
+    margin: 20px 0;
     border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.feature-item:hover {
-    transform: scale(1.05);
-}
-
-.feature-item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.footer {
+  }
+  
+  .footer {
     padding: 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.footer p {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .footer p {
     margin: 0;
-}
+  }
+  

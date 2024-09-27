@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+    const testimonials = document.querySelectorAll('.testimonial');
+    let index = 0;
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+    function showNextTestimonial() {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.style.display = i === index ? 'block' : 'none';
         });
-    });
+        index = (index + 1) % testimonials.length;
+    }
 
-    // Optional: Add any additional JavaScript for animations or interactions
+    setInterval(showNextTestimonial, 3000);
+    showNextTestimonial();
 });
-
